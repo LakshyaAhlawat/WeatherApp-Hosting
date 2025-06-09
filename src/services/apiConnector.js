@@ -33,7 +33,7 @@
 //   return res.json();
 // };
 
-const API_BASE = $`process.env.REACT_APP_API_BASE`;
+const API_BASE = process.env.REACT_APP_API_BASE ;
 
 // Signup
 export const signup = async (email, username, password) => {
