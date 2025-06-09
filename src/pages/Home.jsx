@@ -76,7 +76,7 @@ export default function Home() {
 
   const fetchCityImage = async (city) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/pexels/image?city=${encodeURIComponent(city)}`);
+      const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/pexels/image?city=${encodeURIComponent(city)}`);
       const json = await res.json();
       return json.imageUrl || FALLBACK_IMAGE;
     } catch {
