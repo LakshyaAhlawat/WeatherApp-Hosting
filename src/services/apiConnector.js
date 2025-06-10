@@ -1,37 +1,4 @@
-// const API_BASE = "http://localhost:5000/api";
 
-// // Signup
-// export const signup = async (email, username, password) => {
-//   const res = await fetch(`${API_BASE}/auth/signup`, {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({ email, username, password }),
-//   });
-//   return res.json();
-// };
-
-// // Login
-// export const login = async (email, password) => {
-//   const res = await fetch(`${API_BASE}/auth/login`, {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({ email, password }),
-//   });
-//   return res.json();
-// };
-
-// // Search Weather (requires JWT token)
-// export const searchWeather = async (city, country, token) => {
-//   const res = await fetch(`${API_BASE}/weather/search`, {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//       Authorization: `Bearer ${token}`,
-//     },
-//     body: JSON.stringify({ city, country }),
-//   });
-//   return res.json();
-// };
 
 const API_BASE = process.env.REACT_APP_API_BASE_URL ;
 
